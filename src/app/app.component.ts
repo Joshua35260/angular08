@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular08';
+  name = 'Angular';
+  onomatopoeiaList: string[] = ['Meuh', 'Miaou', 'Coin-coin'];
+
+  onReceiveNewOnomatopia(newOnomatopia: string) {
+    this.onomatopoeiaList.push(newOnomatopia);
+  }
 }
